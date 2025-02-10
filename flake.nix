@@ -15,8 +15,8 @@
         qobuz-player = pkgs.stdenv.mkDerivation {
           name = "qobuz-player";
           src = pkgs.fetchurl {
-            url = "https://github.com/sofusa/qobuz-player/releases/download/v0.2.2/qobuz-player-x86_64-unknown-linux-gnu.tar.gz";
-            sha256 = "sha256-MiL3EwlMCvDMqPXSfEEIOOnX6kthsZKVntQ3q1N42Ds=";
+            url = "https://github.com/sofusa/qobuz-player/releases/download/v0.2.4.1/qobuz-player-x86_64-unknown-linux-gnu.tar.gz";
+            sha256 = "sha256-wP7x9dNVwu2PHoAeXo58kXQ3bHCwu2Z9+O5zTa0/8Fk=";
           };
 
           unpackPhase = ''
