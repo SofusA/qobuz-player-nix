@@ -9,7 +9,7 @@
   outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs { inherit system; };
-      version = "v0.2.9.2";
+      version = "v0.2.9.4";
     in
     {
       packages = {
@@ -17,7 +17,7 @@
           name = "qobuz-player";
           src = pkgs.fetchurl {
             url = "https://github.com/sofusa/qobuz-player/releases/download/${version}/qobuz-player-x86_64-unknown-linux-gnu.tar.gz";
-            sha256 = "sha256-XPHZX/yxarU3MgbWu0wfO+8l+T+NxFWjMO1ChODlbHo=";
+            sha256 = "sha256-jrzf4oVeSV7DsWqm5vhw2RJ1aO32ptHTowtuwYiJeUg=";
           };
 
           unpackPhase = ''
